@@ -16,7 +16,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="7Yk-i3-6i7"/>
-                        <segue destination="fo3-5s-OG2" kind="relationship" relationship="viewControllers" id="hkN-kG-pKC"/>
+                        <segue destination="bAZ-ne-bqb" kind="relationship" relationship="viewControllers" id="pKb-hK-h9D"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cy4-Yn-jUY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -61,6 +61,22 @@
             </objects>
             <point key="canvasLocation" x="184" y="-405"/>
         </scene>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="Biu-yk-pb8">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPb-gL-g0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="bAZ-ne-bqb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="sNV-Z0-8iC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m3O-zZ-9P5">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fo3-5s-OG2" kind="relationship" relationship="rootViewController" id="6Rl-xV-gPO"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="184" y="324"/>
+        </scene>
         <!--Second View Controller - Item-->
         <scene sceneID="ZB2-WQ-q3X">
             <objects>
@@ -93,10 +109,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Sfg-uQ-vh8"/>
+                    <navigationItem key="navigationItem" id="GLK-Af-VCK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dT8-2g-Bfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="184" y="272"/>
+            <point key="canvasLocation" x="860" y="336"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
