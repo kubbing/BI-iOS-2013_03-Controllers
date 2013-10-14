@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor lightGrayColor];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -28,5 +30,18 @@
 
 - (IBAction)showMeAction:(id)sender {
     NSLog(@"show me");
+    
+    //Init With Default nib / code
+  //  SecondViewController* vc = [[SecondViewController alloc] init];
+    
+    // init with specific nib
+     // SecondViewController* vc = [[SecondViewController alloc] initWithNibName:@"" bundle:nil];
+    
+    //init from storyboard
+    SecondViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:@"second"];
+    
+    
+    [self presentViewController:vc animated:YES completion:nil];
+    
 }
 @end

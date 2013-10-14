@@ -21,6 +21,7 @@
 		B41F46EF180BD0D8006F1D3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41F46D1180BD0D8006F1D3F /* UIKit.framework */; };
 		B41F46F7180BD0D8006F1D3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B41F46F5180BD0D8006F1D3F /* InfoPlist.strings */; };
 		B41F46F9180BD0D8006F1D3F /* ControllersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B41F46F8180BD0D8006F1D3F /* ControllersTests.m */; };
+		B41F4704180BD5D6006F1D3F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41F4703180BD5D6006F1D3F /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		B41F46F4180BD0D8006F1D3F /* ControllersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ControllersTests-Info.plist"; sourceTree = "<group>"; };
 		B41F46F6180BD0D8006F1D3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B41F46F8180BD0D8006F1D3F /* ControllersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ControllersTests.m; sourceTree = "<group>"; };
+		B41F4702180BD5D6006F1D3F /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		B41F4703180BD5D6006F1D3F /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				B41F46E3180BD0D8006F1D3F /* ViewController.m */,
 				B41F46E5180BD0D8006F1D3F /* Images.xcassets */,
 				B41F46D4180BD0D8006F1D3F /* Supporting Files */,
+				B41F4702180BD5D6006F1D3F /* SecondViewController.h */,
+				B41F4703180BD5D6006F1D3F /* SecondViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B41F4704180BD5D6006F1D3F /* SecondViewController.m in Sources */,
 				B41F46E4180BD0D8006F1D3F /* ViewController.m in Sources */,
 				B41F46DE180BD0D8006F1D3F /* AppDelegate.m in Sources */,
 				B41F46DA180BD0D8006F1D3F /* main.m in Sources */,
