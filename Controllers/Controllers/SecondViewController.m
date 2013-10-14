@@ -22,10 +22,17 @@
     }
     return self;
 }
+-(void)awakeFromNib {
+    self.tabBarItem.title = @"Pro Tababar";
+    self.tabBarItem.badgeValue = @"2";
+   // self.tabBarItem.image
+    
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"treti";
     self.view.backgroundColor = [UIColor yellowColor];
     
 	// Do any additional setup after loading the view.

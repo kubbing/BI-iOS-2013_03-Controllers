@@ -40,6 +40,7 @@
     //init from storyboard
     SecondViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:@"second"];
     
+    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     
     [self presentViewController:vc animated:YES completion:nil];
     
