@@ -22,6 +22,7 @@
 		B41F46F7180BD0D8006F1D3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B41F46F5180BD0D8006F1D3F /* InfoPlist.strings */; };
 		B41F46F9180BD0D8006F1D3F /* ControllersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B41F46F8180BD0D8006F1D3F /* ControllersTests.m */; };
 		B41F4704180BD5D6006F1D3F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41F4703180BD5D6006F1D3F /* SecondViewController.m */; };
+		B41F4707180BE267006F1D3F /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41F4706180BE267006F1D3F /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		B41F46F8180BD0D8006F1D3F /* ControllersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ControllersTests.m; sourceTree = "<group>"; };
 		B41F4702180BD5D6006F1D3F /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		B41F4703180BD5D6006F1D3F /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B41F4705180BE267006F1D3F /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		B41F4706180BE267006F1D3F /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				B41F46D4180BD0D8006F1D3F /* Supporting Files */,
 				B41F4702180BD5D6006F1D3F /* SecondViewController.h */,
 				B41F4703180BD5D6006F1D3F /* SecondViewController.m */,
+				B41F4705180BE267006F1D3F /* ThirdViewController.h */,
+				B41F4706180BE267006F1D3F /* ThirdViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B41F4704180BD5D6006F1D3F /* SecondViewController.m in Sources */,
+				B41F4707180BE267006F1D3F /* ThirdViewController.m in Sources */,
 				B41F46E4180BD0D8006F1D3F /* ViewController.m in Sources */,
 				B41F46DE180BD0D8006F1D3F /* AppDelegate.m in Sources */,
 				B41F46DA180BD0D8006F1D3F /* main.m in Sources */,
@@ -382,12 +388,15 @@
 		B41F46FD180BD0D8006F1D3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Controllers/Controllers-Prefix.pch";
 				INFOPLIST_FILE = "Controllers/Controllers-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -395,12 +404,15 @@
 		B41F46FE180BD0D8006F1D3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Controllers/Controllers-Prefix.pch";
 				INFOPLIST_FILE = "Controllers/Controllers-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

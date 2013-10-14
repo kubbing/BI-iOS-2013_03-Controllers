@@ -10,5 +10,7 @@
 
 @interface ViewController : UIViewController
 - (IBAction)showMeAction:(id)sender;
+- (IBAction)pushThirdAction:(id)sender;
+- (IBAction)addAction:(id)sender;
 
 @end

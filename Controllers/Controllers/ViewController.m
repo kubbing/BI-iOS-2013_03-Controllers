@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SecondViewController.h"
+#import "ThirdViewController.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Ahoj";
     self.view.backgroundColor = [UIColor lightGrayColor];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -40,9 +42,23 @@
     //init from storyboard
     SecondViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:@"second"];
     
-    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    vc.navigationItem.title = @"Welcome";
     
-    [self presentViewController:vc animated:YES completion:nil];
+    UINavigationController* navVC = [[UINavigationController alloc] initWithRootViewController:vc];
     
+    navVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    
+    [self presentViewController:navVC animated:YES completion:nil];
+    
+}
+
+- (IBAction)pushThirdAction:(id)sender {
+    ThirdViewController* third = [self.storyboard instantiateViewControllerWithIdentifier:@"third"];
+    
+    [self.navigationController pushViewController:third animated:YES];
+}
+
+- (IBAction)addAction:(id)sender {
+    [[[UIAlertView alloc] initWithTitle:@"Warning!" message:@"Adding is not supported!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
 }
 @end

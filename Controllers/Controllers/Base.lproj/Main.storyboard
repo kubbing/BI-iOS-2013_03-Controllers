@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="6II-kg-sZ0">
     <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
@@ -15,8 +16,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="7Yk-i3-6i7"/>
                         <segue destination="bAZ-ne-bqb" kind="relationship" relationship="viewControllers" id="pKb-hK-h9D"/>
+                        <segue destination="fo3-5s-OG2" kind="relationship" relationship="viewControllers" id="IyQ-Sz-byM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cy4-Yn-jUY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -43,23 +44,40 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rG-za-GfK">
-                                <rect key="frame" x="97" y="156" width="126" height="30"/>
+                                <rect key="frame" x="65" y="156" width="191" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Show me Second!">
+                                <state key="normal" title="Show me Second (modally)!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="showMeAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XEA-YH-kU8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTJ-oX-eyS">
+                                <rect key="frame" x="121" y="215" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Push Third ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushThirdAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KpM-5o-ZYu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="hJA-xk-BLh"/>
+                    <navigationItem key="navigationItem" id="F2T-DV-GWt">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xYj-C6-kJJ">
+                            <connections>
+                                <action selector="addAction:" destination="vXZ-lx-hvc" id="aI6-zQ-e50"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="184" y="-405"/>
+            <point key="canvasLocation" x="844" y="-433"/>
         </scene>
         <!--Navigation Controller - Item-->
         <scene sceneID="Biu-yk-pb8">
@@ -71,11 +89,11 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="fo3-5s-OG2" kind="relationship" relationship="rootViewController" id="6Rl-xV-gPO"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="gM3-Qc-3go"/>
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="184" y="324"/>
+            <point key="canvasLocation" x="224" y="-404"/>
         </scene>
         <!--Second View Controller - Item-->
         <scene sceneID="ZB2-WQ-q3X">
@@ -113,7 +131,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dT8-2g-Bfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860" y="336"/>
+            <point key="canvasLocation" x="224" y="324"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="3If-8M-OGc">
+            <objects>
+                <viewController storyboardIdentifier="third" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RtR-wb-LvW" customClass="ThirdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pRh-bY-B5x"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Ma-LP-X2E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fn7-lT-N4R">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Third VC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsi-KI-GBv">
+                                <rect key="frame" x="139" y="187" width="67" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KMu-BE-fBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1293" y="-451"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
